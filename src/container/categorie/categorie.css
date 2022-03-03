@@ -1,0 +1,9 @@
+
+.Categorie_main_div{
+    
+}
+.categorie_card_div{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content:space-evenly;
+}

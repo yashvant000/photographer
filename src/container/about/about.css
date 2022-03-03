@@ -1,0 +1,15 @@
+.about_main_div {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(24, 24, 24) ;
+    margin:10px 30px 0px 30px;
+}
+
+.about_subtitle {
+  font-size: larger;
+}
+.about_p_view{
+  margin-top: 10px;
+    color:  rgba(255, 255, 255, 0.308);
+}
+

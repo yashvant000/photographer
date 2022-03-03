@@ -1,0 +1,35 @@
+.header_main_div{
+    width: 100%;
+
+}
+.header_div{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+
+}
+.nav_link_css{
+    text-decoration: none;
+    margin: 30px 30px 0px 30px;
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.308);
+    width: 100%;
+}
+.hr_view{
+    height: 1px;
+    background-color:rgba(131, 129, 129, 0.308);
+    margin: 2px 20px 0px 30px;
+}
+.logo_view{
+    height: 30vh;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+.h1_view{
+    font-size:48px ;
+}
+
+.nav_link_css:hover{
+    color:silver;
+}

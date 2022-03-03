@@ -1,0 +1,11 @@
+ .card_main_div{
+     height: 30vh;
+     width: 31%;
+     margin-top: 30px;
+ }
+ .card_main_div:hover .Card_img_view{
+     opacity: 0.6;
+ }
+ .Card_img_view{
+     opacity: 1;
+ }
