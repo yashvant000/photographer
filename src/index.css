@@ -5,10 +5,14 @@ body{
 .h1_view{
     color:#fff;
     margin-top: 5px;
-
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.h1_view:hover.text{
+    opacity: 1;
 }
 .span_view{
     color:rgba(255, 255, 255, 0.308);
-    font-family:'Times New Roman', Times, serif;
+    font-family:cursive;
     font-size:medium;
 }

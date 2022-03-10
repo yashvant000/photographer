@@ -1,35 +1,52 @@
+import React from 'react';
 import react from 'react';
+import './carousel.css';
 
 
-const Data =[
-    {
-        title='item1'
-    },
-    {
-        title='item2'
-    },
-    {
-        title='item2'
-    }
-]
- const CarouselItem =()=>{
-    return(
+const CarouselItem = (props) => {
+    const { url } = props
+    return (
         <div className='corousel_item'>
-          
+            <img height="100%"
+                width="100%"
+                alt=""
+                src={url}
+            />
         </div>
     )
 }
 
-const Carousel=()=>{
-    return(
-        <div className='carousel_div'>
-            <div className='item_div'>
-    {
-    
-    }
-            </div>
+const Carousel = (props) => {
+    const [index, setIndex] = React.useState(0)
+    const { data } = props;
 
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            if (data.length - 1 > index) {
+                setIndex(index + 1)
+            }
+            else {
+                setIndex(0)
+            }
+        }, 3000)
+        return ()=>{
+            clearInterval(interval)
+        }
+
+    })
+    return (
+        <div className='carousel_div'>
+            <div className='item_div'
+                style={{ transform: `translateX(-${index*100}%)` }}
+            >
+                {
+                    data?.map((data, index) => {
+                        return <CarouselItem key={index} url={data.url} />
+                    })
+                }
+            </div>
         </div>
-    
+
+    )
 }
 export default Carousel;
